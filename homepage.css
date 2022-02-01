@@ -2,13 +2,13 @@
 body {
   display: grid;
   grid-template-columns: 100px 1fr 1fr 1fr 100px;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
   grid-gap: 20px;
   grid-template-areas:
-    "1marge1 one1 two1 three1 1marge2"
-    "2marge1 one2 two2 three2 2marge2"
-    "3marge1 one3 two3 three3 3marge2"
-    "4marge1 one4 two4 three4 4marge2";
+    "one1 one1 one1 one1 one1"
+    "2marge1 one2 one2 one2 2marge2"
+    "3marge1 one3 one3 one3 3marge2"
+    "4marge1 one4 one4 one4 4marge2";
 }
 /* NAVIGATION */
 nav {
@@ -55,19 +55,12 @@ nav h2 {
 
 /* SECTION 1 */
 
-section.edit-hp {
+.edithp {
+  grid-area: one1;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 100px 1fr 1fr 1fr 100px;
+  grid-template-rows: 200px auto auto;
   grid-gap: 20px;
-  grid-template-areas:
-    "uno due tre"
-    "uno2 due2 tre2";
-}
-
-#go-edit {
-  grid-column-start: due;
-  grid-column-end: tre;
 }
 
 /* SECTION 2 */
