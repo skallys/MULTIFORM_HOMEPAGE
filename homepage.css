@@ -1,0 +1,47 @@
+/* COMMUN À TOUS */
+body {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr 100px;
+  grid-template-areas: "marge1 one two three marge2";
+}
+/* NAVIGATION */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  grid-column-start: one;
+  grid-column-end: three;
+  height: 100px;
+}
+
+.nav-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.nav-icon {
+  width: 45px;
+  height: 45px;
+  background-color: var(--black);
+  border-radius: 30px;
+  margin: 10px;
+}
+
+nav h1 {
+  font-family: "logo";
+  font-size: 2rem;
+  color: var(--black);
+}
+
+nav h2 {
+  font-family: "favorit";
+  font-weight: 400;
+  color: var(--black);
+}
+
+/* SECTION 1 */
+
+/* SECTION 2 */

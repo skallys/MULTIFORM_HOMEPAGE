@@ -1,3 +1,4 @@
+/*IMPORTS DES FONTS*/
 /* IMPORT font du logo (ABCWhyte-super) */
 @font-face {
   font-family: "logo";
@@ -10,7 +11,7 @@
   font-family: "favorit";
   src: url("assets/fonts/ABCFavorit-Regular-Trial.woff") format("woff"),
     url("assets/fonts/ABCFavorit-Regular-Trial.woff2") format("woff2");
-  font-weight: regular;
+  font-weight: 400;
 }
 
 /* IMPORT font du texte (ABCFavorit-bold)*/
@@ -18,9 +19,23 @@
   font-family: "favorit";
   src: url("assets/fonts/ABCFavorit-Bold-Trial.woff") format("woff"),
     url("assets/fonts/ABCFavorit-Bold-Trial.woff2") format("woff2");
-  font-weight: bold;
+  font-weight: 700;
 }
 
+/* LES VARIABLES POUR LES COULEURS */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #929292;
+}
+/*COMMENT UTILISER LES VARIABLES*/
+/*
+    background-color: var(--black);
+    color: var(--white);
+    border-color: var(--grey); 
+    */
+
+/* body toujours sans marge */
 body {
   margin: 0;
 }
