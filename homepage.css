@@ -56,11 +56,30 @@ nav h2 {
 /* SECTION 1 */
 
 .edithp {
-  grid-area: one1;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
   display: grid;
   grid-template-columns: 100px 1fr 1fr 1fr 100px;
   grid-template-rows: 200px auto auto;
   grid-gap: 20px;
+}
+
+#teaser {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: var(--black);
+  height: 700px;
+}
+
+#go-edit {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 /* SECTION 2 */
