@@ -1,0 +1,26 @@
+/* IMPORT font du logo (ABCWhyte-super) */
+@font-face {
+  font-family: "logo";
+  src: url("assets/fonts/ABCWhyte-Super-Trial.woff") format("woff"),
+    url("assets/fonts/ABCWhyte-Super-Trial.woff2") format("woff2");
+}
+
+/* IMPORT font du texte (ABCFavorit-regular)*/
+@font-face {
+  font-family: "favorit";
+  src: url("assets/fonts/ABCFavorit-Regular-Trial.woff") format("woff"),
+    url("assets/fonts/ABCFavorit-Regular-Trial.woff2") format("woff2");
+  font-weight: regular;
+}
+
+/* IMPORT font du texte (ABCFavorit-bold)*/
+@font-face {
+  font-family: "favorit";
+  src: url("assets/fonts/ABCFavorit-Bold-Trial.woff") format("woff"),
+    url("assets/fonts/ABCFavorit-Bold-Trial.woff2") format("woff2");
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+}
