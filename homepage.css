@@ -58,8 +58,11 @@ nav h2 {
 section.edit-hp {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 20px;
-  grid-template-areas: "uno due tre";
+  grid-template-areas:
+    "uno due tre"
+    "uno2 due2 tre2";
 }
 
 #go-edit {
