@@ -2,7 +2,13 @@
 body {
   display: grid;
   grid-template-columns: 100px 1fr 1fr 1fr 100px;
-  grid-template-areas: "marge1 one two three marge2";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "1marge1 one1 two1 three1 1marge2"
+    "2marge1 one2 two2 three2 2marge2"
+    "3marge1 one3 two3 three3 3marge2"
+    "4marge1 one4 two4 three4 4marge2";
 }
 /* NAVIGATION */
 nav {
@@ -10,8 +16,8 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  grid-column-start: one;
-  grid-column-end: three;
+  grid-column-start: one1;
+  grid-column-end: three1;
   height: 100px;
 }
 
@@ -43,5 +49,22 @@ nav h2 {
 }
 
 /* SECTION 1 */
+
+.edit-hp {
+  grid-column-start: one2;
+  grid-column-end: three2;
+}
+
+section.edit-hp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas: "uno due tre";
+}
+
+#go-edit {
+  grid-column-start: due;
+  grid-column-end: tre;
+}
 
 /* SECTION 2 */
