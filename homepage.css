@@ -12,6 +12,7 @@ body {
 }
 /* NAVIGATION */
 nav {
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,6 +20,11 @@ nav {
   grid-column-start: one1;
   grid-column-end: three1;
   height: 100px;
+  left: 0;
+  right: 0;
+  margin-left: 120px;
+  margin-right: 120px;
+  z-index: 100;
 }
 
 .nav-icons {
@@ -33,7 +39,6 @@ nav {
   height: 45px;
   background-color: var(--black);
   border-radius: 30px;
-  margin: 10px;
 }
 
 nav h1 {
@@ -49,11 +54,6 @@ nav h2 {
 }
 
 /* SECTION 1 */
-
-.edit-hp {
-  grid-column-start: one2;
-  grid-column-end: three2;
-}
 
 section.edit-hp {
   display: grid;
