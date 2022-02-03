@@ -129,7 +129,7 @@ nav h2 {
   grid-row-start: 2;
   grid-row-end: 5;
   width: 10px;
-  height: 80.2%;
+  height: 80.8%;
   background-color: var(--black);
   position: relative;
   left: -9px;
@@ -211,6 +211,7 @@ nav h2 {
   grid-row-end: 2;
   background-image: url("assets/img/img-section3.jpg");
   background-size: cover;
+  z-index: 100;
 }
 
 #go-about {
