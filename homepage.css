@@ -10,6 +10,7 @@ body {
     "2marge1 one2 one2 one2 2marge2"
     "3marge1 one3 one3 one3 3marge2"
     "4marge1 one4 one4 one4 4marge2";
+  overflow-y: none;
 }
 /* NAVIGATION */
 nav {
@@ -46,12 +47,14 @@ nav h1 {
   font-family: "logo";
   font-size: 2rem;
   color: var(--black);
+  cursor: pointer;
 }
 
 nav h2 {
   font-family: "favorit";
   font-weight: 400;
   color: var(--black);
+  cursor: pointer;
 }
 
 /* SECTION 1 */
@@ -81,11 +84,16 @@ nav h2 {
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
-  margin-bottom: 8vh;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 10vh;
 }
 
 #ligne1 {
-  height: 20px;
+  height: 10px;
   width: 100%;
   background-color: var(--black);
   grid-column-start: 3;
@@ -95,4 +103,91 @@ nav h2 {
   align-self: end;
 }
 
+#creer-btn {
+  height: 69px;
+  text-decoration: none;
+  color: var(--white);
+  margin-bottom: 27px;
+}
+
+#creer-shape {
+  background-color: var(--black);
+  border-radius: 40px;
+  width: 174px;
+  display: flex;
+  justify-content: center;
+  height: 69px;
+  cursor: pointer;
+}
+
+#creer-shape h3 {
+  margin: 14px;
+}
+
+#creer-btn:hover {
+  scale: 102%;
+}
+
 /* SECTION 2 */
+
+#news {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+}
+
+#img1 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url("assets/img/img-section2.jpg");
+  height: 700px;
+  width: 100vw;
+  align-self: end;
+}
+
+#go-news {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: auto auto;
+}
+
+#title1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#details1 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+#details1 p {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.savoir-plus {
+  align-self: end;
+}
+
+/* SECTION 3 */

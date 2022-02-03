@@ -39,3 +39,31 @@
 body {
   margin: 0;
 }
+
+h1 {
+  font-size: 60pt;
+  font-family: "favorit";
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  font-size: 25pt;
+  font-family: "favorit";
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  font-size: 29pt;
+  font-family: "favorit";
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  font-size: 25pt;
+  font-family: "favorit";
+  font-weight: 400;
+  margin: 0;
+}
