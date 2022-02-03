@@ -66,19 +66,20 @@ nav h2 {
   grid-row-end: 2;
   display: grid;
   grid-template-columns: subgrid;
-  grid-template-rows: 200px auto auto;
+  grid-template-rows: 400px auto auto;
   grid-gap: 20px;
+  margin-bottom: 15vh;
 }
-
+/* vidéo */
 #teaser {
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 2;
   grid-row-end: 3;
   background-color: var(--black);
-  height: 700px;
+  height: 900px;
 }
-
+/* infos + bouton */
 #go-edit {
   grid-column-start: 3;
   grid-column-end: 5;
@@ -103,6 +104,7 @@ nav h2 {
   align-self: end;
 }
 
+/* CREER BOUTON */
 #creer-btn {
   height: 69px;
   text-decoration: none;
@@ -137,7 +139,7 @@ nav h2 {
   grid-row-end: 3;
   display: grid;
   grid-template-columns: subgrid;
-  grid-template-rows: auto auto;
+  grid-template-rows: 900px auto;
   grid-gap: 20px;
 }
 
@@ -147,9 +149,7 @@ nav h2 {
   grid-row-start: 1;
   grid-row-end: 2;
   background-image: url("assets/img/img-section2.jpg");
-  height: 700px;
-  width: 100vw;
-  align-self: end;
+  background-size: cover;
 }
 
 #go-news {
@@ -159,7 +159,6 @@ nav h2 {
   grid-row-end: 3;
   display: grid;
   grid-template-columns: subgrid;
-  grid-template-rows: auto auto;
 }
 
 #title1 {
@@ -167,6 +166,9 @@ nav h2 {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+  display: flex;
+  align-items: end;
+  height: 30vh;
 }
 
 #details1 {
@@ -174,20 +176,32 @@ nav h2 {
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
-  display: grid;
-  grid-template-columns: subgrid;
-  grid-template-rows: subgrid;
 }
 
-#details1 p {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
+/*  SAVOIR PLUS BOUTON */
 
 .savoir-plus {
   align-self: end;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.savoir-plus-shape {
+  background-color: var(--black);
+  border-radius: 40px;
+  width: 330px;
+  display: flex;
+  justify-content: center;
+  height: 69px;
+  cursor: pointer;
+}
+
+.savoir-plus-shape h3 {
+  margin: 14px;
+}
+
+.savoir-plus-shape:hover {
+  scale: 102%;
 }
 
 /* SECTION 3 */
