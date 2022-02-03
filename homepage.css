@@ -3,13 +3,8 @@ body {
   display: grid;
   grid-template-columns: 100px 1fr 1fr 1fr 100px;
   /*grid-template-rows: auto auto auto auto;*/
-  grid-template-rows: 2fr 2fr 2fr 1fr;
+  grid-template-rows: auto auto auto auto;
   grid-gap: 20px;
-  grid-template-areas:
-    "one1 one1 one1 one1 one1"
-    "2marge1 one2 one2 one2 2marge2"
-    "3marge1 one3 one3 one3 3marge2"
-    "4marge1 one4 one4 one4 4marge2";
   overflow-y: none;
 }
 /* NAVIGATION */
@@ -41,13 +36,6 @@ nav {
   height: 45px;
   background-color: var(--black);
   border-radius: 30px;
-}
-
-nav h1 {
-  font-family: "logo";
-  font-size: 2rem;
-  color: var(--black);
-  cursor: pointer;
 }
 
 nav h2 {
@@ -106,7 +94,7 @@ nav h2 {
 
 /* CREER BOUTON */
 #creer-btn {
-  height: 69px;
+  height: 50px;
   text-decoration: none;
   color: var(--white);
   margin-bottom: 27px;
@@ -115,15 +103,15 @@ nav h2 {
 #creer-shape {
   background-color: var(--black);
   border-radius: 40px;
-  width: 174px;
+  width: 140px;
   display: flex;
   justify-content: center;
-  height: 69px;
+  height: 50px;
   cursor: pointer;
 }
 
 #creer-shape h3 {
-  margin: 14px;
+  margin: 10px;
 }
 
 #creer-btn:hover {
@@ -139,7 +127,7 @@ nav h2 {
   grid-row-end: 3;
   display: grid;
   grid-template-columns: subgrid;
-  grid-template-rows: 900px auto;
+  grid-template-rows: 900px 400px;
   grid-gap: 20px;
 }
 
@@ -159,6 +147,7 @@ nav h2 {
   grid-row-end: 3;
   display: grid;
   grid-template-columns: subgrid;
+  grid-template-rows: auto auto;
 }
 
 #title1 {
@@ -166,9 +155,6 @@ nav h2 {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-  display: flex;
-  align-items: end;
-  height: 30vh;
 }
 
 #details1 {
@@ -189,15 +175,14 @@ nav h2 {
 .savoir-plus-shape {
   background-color: var(--black);
   border-radius: 40px;
-  width: 330px;
+  width: 230px;
   display: flex;
   justify-content: center;
-  height: 69px;
-  cursor: pointer;
+  height: 50px;
 }
 
 .savoir-plus-shape h3 {
-  margin: 14px;
+  margin: 10px;
 }
 
 .savoir-plus-shape:hover {
