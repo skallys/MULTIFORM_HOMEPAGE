@@ -1,4 +1,7 @@
 /* COMMUN À TOUS */
+
+html {
+}
 body {
   display: grid;
   grid-template-columns: 100px 1fr 1fr 1fr 100px;
