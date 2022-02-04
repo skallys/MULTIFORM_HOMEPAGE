@@ -125,20 +125,6 @@ nav h2 {
   scale: 102%;
 }
 
-/* LA LIGNE QUI SÉPARE LES INFOS DES TITRES*/
-#ligne2 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 5;
-  width: 10px;
-  height: 80.8%;
-  background-color: var(--black);
-  position: relative;
-  left: -9px;
-  z-index: 1;
-}
-
 /* SECTION 2 */
 
 #news {
